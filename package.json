@@ -6,7 +6,7 @@
 	"homepage": "https://devias.io",
 	"private": false,
 	"scripts": {
-		"dev": "next dev --webpack",
+    "dev": "NODE_OPTIONS='--max-old-space-size=512' next dev --webpack",
 		"build": "next build --webpack",
 		"start": "next start",
 		"lint": "next lint",
