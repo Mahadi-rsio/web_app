@@ -3,16 +3,17 @@
 import React from "react"
 import { Box, Tab, Tabs, Container, Stack, Typography, Paper } from "@mui/material"
 import { ChartLineUp, Gear, FolderOpen } from "@phosphor-icons/react"
-import { useRouter, usePathname } from "next/navigation"
+import { useRouter, usePathname, useParams } from "next/navigation"
 
 export default function StorageLayout({ children }: { children: React.ReactNode }) {
   const router = useRouter()
   const pathname = usePathname()
+  const { id } = useParams<{ id: string }>()
 
   const activeTab = pathname.split("/").pop() || "overview"
 
   const handleTabChange = (event: React.SyntheticEvent, newValue: string) => {
-    router.push(newValue)
+    router.push(`/dashboard/storage/${id}/${newValue}`)
   }
 
   return (
