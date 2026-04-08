@@ -11,6 +11,12 @@ export const paths = {
       settings: "/dashboard/database/settings",
       tables: "/dashboard/database/tables"
     },
+    storage: {
+      index: "/dashboard/storage/",
+      overview: "/dashboard/storage/overview",
+      settings: "/dashboard/storage/settings",
+      files: "/dashboard/storage/files"
+    },
   },
   errors: { notFound: "/errors/not-found" },
 } as const;

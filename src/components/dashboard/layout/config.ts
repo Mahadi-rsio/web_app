@@ -6,4 +6,5 @@ export const navItems = [
   { key: "settings", title: "Settings", href: paths.dashboard.settings, icon: "gear-six" },
   { key: "account", title: "Account", href: paths.dashboard.account, icon: "user" },
   { key: "database", title: "Database", href: paths.dashboard.database.index, icon: "database" },
+  { key: "storage", title: "Storage", href: paths.dashboard.storage.index, icon: "hard-drive" },
 ] satisfies NavItemConfig[];
