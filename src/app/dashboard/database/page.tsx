@@ -29,6 +29,7 @@ import {
   ArrowSquareOut,
   HardDrive
 } from "@phosphor-icons/react"
+import { useRouter } from "next/navigation"
 
 // Mock list of created SQLite database files
 const INITIAL_DATABASES = [
@@ -44,6 +45,8 @@ export default function DatabaseList() {
     db.filename.toLowerCase().includes(search.toLowerCase())
   )
 
+  const router = useRouter()
+
   return (
     <Container maxWidth="lg" sx={{ py: 6 }}>
       {/* Top Header Section */}
@@ -57,6 +60,7 @@ export default function DatabaseList() {
           </Typography>
         </Box>
         <Button
+          onClick={() => { router.push("/dashboard/database/create") }}
           variant="contained"
           disableElevation
           startIcon={<Plus weight="bold" />}
@@ -138,7 +142,7 @@ export default function DatabaseList() {
                 </TableCell>
                 <TableCell align="right">
                   <Stack direction="row" spacing={1} justifyContent="flex-end">
-                    <IconButton size="small" title="Open Location" href='/dashboard/database/tables'>
+                    <IconButton size="small" title="Open Location" href={`/dashboard/database/${db.id}/overview`}>
                       <ArrowSquareOut size={20} />
                     </IconButton>
                     <IconButton size="small" sx={{ color: '#D92D20' }} title="Delete File">

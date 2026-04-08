@@ -21,16 +21,10 @@ export default function DatabaseLayout({ children }: { children: React.ReactNode
   return (
     <Box sx={{ bgcolor: "#FAFBFC", minHeight: "100vh" }}>
       {/* Persistent Header */}
-      <Paper elevation={0} sx={{ borderBottom: '1px solid #E0E4E8', bgcolor: '#fff', pt: 3 }}>
+      <Paper elevation={0} sx={{ borderBottom: '1px solid #E0E4E8', bgcolor: '#fff', pt: 1 }}>
         <Container maxWidth="xl">
           <Stack spacing={1} sx={{ mb: 2 }}>
             <Breadcrumbs separator={<CaretRight size={12} weight="bold" />} aria-label="breadcrumb">
-              <Link href="/databases" style={{ textDecoration: 'none', color: 'inherit', fontSize: '0.85rem' }}>
-                Projects
-              </Link>
-              <Typography color="text.primary" sx={{ fontSize: '0.85rem', fontWeight: 600 }}>
-                main_production_db
-              </Typography>
             </Breadcrumbs>
             <Typography variant="h5" fontWeight="800">Project Dashboard</Typography>
           </Stack>
