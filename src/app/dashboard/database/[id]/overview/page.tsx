@@ -20,8 +20,11 @@ import {
   ArrowUpRight,
   Info
 } from "@phosphor-icons/react"
+import { useParams } from "next/navigation"
 
-export default function ProjectOverview() {
+
+export default function Page() {
+  const { id } = useParams<{ id: string }>()
   return (
     <Box>
       <Grid container spacing={4}>
@@ -44,7 +47,7 @@ export default function ProjectOverview() {
                 </Grid>
                 <Grid item xs={6}>
                   <Typography variant="caption" color="text.secondary">INTERNAL ID</Typography>
-                  <Typography variant="body1" sx={{ fontFamily: 'monospace' }}>db-uuid-88291</Typography>
+                  <Typography variant="body1" sx={{ fontFamily: 'monospace' }}>{id}</Typography>
                 </Grid>
                 <Grid item xs={6}>
                   <Typography variant="caption" color="text.secondary">CREATED ON</Typography>

@@ -1,5 +1,12 @@
-import { redirect } from "next/navigation";
+"use client"
 
-export default function Page(): never {
-  redirect("/dashboard/database/0/overview");
+import { redirect, useParams } from "next/navigation";
+
+export default function Page() {
+
+
+
+  const { id } = useParams<{ id: string }>()
+
+  redirect(`/dashboard/database/${id}/overview`);
 }
