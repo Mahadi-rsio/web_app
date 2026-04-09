@@ -8,6 +8,10 @@ import { XSquare } from "@phosphor-icons/react/dist/ssr/XSquare";
 import { Database } from '@phosphor-icons/react'
 import { HardDriveIcon } from "@phosphor-icons/react/dist/ssr/HardDrive";
 import { BrowsersIcon } from "@phosphor-icons/react/dist/ssr/Browsers";
+import { CloudArrowUpIcon } from "@phosphor-icons/react/dist/ssr/CloudArrowUp";
+import { StackIcon } from "@phosphor-icons/react/dist/ssr/Stack";
+import { FunctionIcon } from "@phosphor-icons/react/dist/ssr/Function";
+import { TimerIcon } from "@phosphor-icons/react/dist/ssr/Timer";
 
 export const navIcons = {
   "chart-pie": ChartPieIcon,
@@ -17,6 +21,10 @@ export const navIcons = {
   "database": Database,
   "hard-drive": HardDriveIcon,
   "browsers": BrowsersIcon,
+  "cloud-arrow-up": CloudArrowUpIcon,
+  "stack": StackIcon,
+  "function": FunctionIcon,
+  "timer": TimerIcon,
   user: UserIcon,
   users: UsersIcon,
 } as Record<string, Icon>;

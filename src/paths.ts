@@ -21,6 +21,18 @@ export const paths = {
       index: "/dashboard/pages/",
       create: "/dashboard/pages/create",
     },
+    backup: {
+      index: "/dashboard/backup/",
+    },
+    kvStorage: {
+      index: "/dashboard/kv-storage/",
+    },
+    functions: {
+      index: "/dashboard/functions/",
+    },
+    cronJob: {
+      index: "/dashboard/cron-job/",
+    },
   },
   errors: { notFound: "/errors/not-found" },
 } as const;
