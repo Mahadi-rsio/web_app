@@ -17,6 +17,10 @@ export const paths = {
       settings: "/dashboard/storage/settings",
       files: "/dashboard/storage/files"
     },
+    pages: {
+      index: "/dashboard/pages/",
+      create: "/dashboard/pages/create",
+    },
   },
   errors: { notFound: "/errors/not-found" },
 } as const;
