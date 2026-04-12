@@ -12,4 +12,5 @@ export const navItems = [
   { key: "kv-storage", title: "KV Storage", href: paths.dashboard.kvStorage.index, icon: "stack" },
   { key: "functions", title: "Functions", href: paths.dashboard.functions.index, icon: "function" },
   { key: "cron-job", title: "Cron Jobs", href: paths.dashboard.cronJob.index, icon: "timer" },
+  { key: "integrations", title: "Integrations", href: paths.dashboard.integrations.index, icon: "link" },
 ] satisfies NavItemConfig[];
