@@ -33,6 +33,9 @@ export const paths = {
     cronJob: {
       index: "/dashboard/cron-job/",
     },
+    integrations: {
+      index: "/dashboard/integrations/",
+    },
   },
   errors: { notFound: "/errors/not-found" },
 } as const;

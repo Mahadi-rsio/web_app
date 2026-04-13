@@ -12,6 +12,7 @@ import { CloudArrowUpIcon } from "@phosphor-icons/react/dist/ssr/CloudArrowUp";
 import { StackIcon } from "@phosphor-icons/react/dist/ssr/Stack";
 import { FunctionIcon } from "@phosphor-icons/react/dist/ssr/Function";
 import { TimerIcon } from "@phosphor-icons/react/dist/ssr/Timer";
+import { LinkIcon } from "@phosphor-icons/react/dist/ssr/Link";
 
 export const navIcons = {
   "chart-pie": ChartPieIcon,
@@ -25,6 +26,7 @@ export const navIcons = {
   "stack": StackIcon,
   "function": FunctionIcon,
   "timer": TimerIcon,
+  "link": LinkIcon,
   user: UserIcon,
   users: UsersIcon,
 } as Record<string, Icon>;
